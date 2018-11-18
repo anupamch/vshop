@@ -54,4 +54,5 @@ class AdminHome extends Controller
     function dashboard(){
     	return view('admin.user.dashboard');
     }
+    
 }

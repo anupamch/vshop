@@ -15,5 +15,6 @@ use Illuminate\Http\Request;
 
 Route::middleware(['guest'])->group(function(){
 
-	  Route::get("/","AdminHome@login");
+	  Route::get("/login","AdminUserController@login");
+	  Route::post("/register","AdminUserController@register");
 });
